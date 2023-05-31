@@ -1,5 +1,5 @@
 container_name := mdns-repeater
-repo_name := cmilanf/docker-mdns-repeater-mikrotik
+repo_name := proNET-Southtirol/docker-mdns-repeater-mikrotik
 
 default: container/arm-v7
 all: container/arm64 container/arm-v7
