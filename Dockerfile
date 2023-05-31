@@ -11,7 +11,7 @@ FROM alpine
 
 LABEL REPEATER_INTERFACES="Interfaces to repeat mDNS. For example: eth0 eth0.11"
 
-RUN apk add vlan libcap bash
+RUN apk add vlan libcap bash htop
 
 COPY --from=builder /bin/mdns-repeater /bin/mdns-repeater
 COPY entrypoint.bash /
